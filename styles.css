@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./Poppins-Regular.woff2);
+}
+
+body {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#gameInstructions {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#colorBox {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  margin: 20px auto;
+}
+#colorOptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.colorOption {
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+#newGameButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  font-family: inherit;
+  background: #000;
+  border: none;
+  cursor: pointer;
+}
