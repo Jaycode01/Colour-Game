@@ -4,8 +4,6 @@ const gameStatus = document.getElementById("gameStatus");
 const scoreElement = document.getElementById("score");
 const newGameButton = document.getElementById("newGameButton");
 
-let targetColor;
-let score = 0;
 
 function generateRandomColor() {
   const r = Math.floor(Math.random() * 256);
@@ -13,6 +11,9 @@ function generateRandomColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
 }
+
+let targetColor;
+let score = 0;
 
 function startNewGame() {
   targetColor = generateRandomColor();
@@ -49,7 +50,5 @@ function checkGuess(guessedColor) {
     gameStatus.textContent = `Ouch, That's wrong!`;
   }
 }
-
 newGameButton.onclick = startNewGame;
-
 startNewGame();
