@@ -23,6 +23,11 @@ h1 {
   font-size: 20px;
   font-weight: bold;
 }
+
+#gameStatus {
+  font-size: 22px;
+  font-weight: 500;
+}
 #colorBox {
   width: 200px;
   height: 200px;
