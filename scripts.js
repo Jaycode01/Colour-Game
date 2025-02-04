@@ -41,12 +41,12 @@ function startNewGame() {
 
 function checkGuess(guessedColor) {
   if (guessedColor === targetColor) {
-    gameStatus.textContent = "Correct!";
+    gameStatus.textContent = "Oh wow, Correct!";
     score++;
     scoreElement.textContent = score;
     setTimeout(startNewGame, 1000);
   } else {
-    gameStatus.textContent = "Wrong! Try again.";
+    gameStatus.textContent = `Ouch, That's wrong!`;
   }
 }
 
